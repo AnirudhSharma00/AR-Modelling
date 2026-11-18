@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR Model Library</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script type="module"
+        src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js">
+    </script>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">AR<span>LAB</span></div>
+            <div class="header-tag">MECHANICAL ENGINEERING</div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="hero">
+            <div class="hero-label">3D INTERACTIVE LIBRARY</div>
+
+            <h1>Explore the <span>World of Mechanics.</span></h1>
+
+            <p>
+                Discover interactive 3D engineering models.
+                Rotate, inspect and explore mechanical systems
+                directly in your browser.
+            </p>
+
+            <div class="hero-line"></div>
+        </section>
+
+        <section class="library-section">
+
+            <div class="section-heading">
+                <div>
+                    <h2>Model Collection</h2>
+                    <p>Explore our collection of mechanical models</p>
+                </div>
+                <div class="model-count">09 MODELS</div>
+            </div>
+
+            <div class="model-grid">
+
+                <!-- Spinning Top -->
+                <div class="model-card">
+                    <div class="model-preview">
+                        <model-viewer src="spinning-top-trajectory.glb"
+                            alt="Spinning Top"
+                            camera-controls>
+                        </model-viewer>
+                        <span class="model-number">01</span>
+                    </div>
+                    <div class="model-info">
+                        <h3>Spinning Top</h3>
+                        <p>Trajectory</p>
+                        <a href="model-page.html?model=spinning-top-trajectory"
+                            class="view-btn">Explore Model <span>↗</span></a>
+                    </div>
+                </div>
+
+                <!-- Gyroscope -->
+                <div class="model-card">
+                    <div class="model-preview">
+                        <model-viewer src="gyroscope.glb"
+                            alt="Gyroscope"
+                            camera-controls>
+                        </model-viewer>
+                        <span class="model-number">02</span>
+                    </div>
+                    <div class="model-info">
+                        <h3>Gyroscope</h3>
+                        <p>Rotational Dynamics</p>
+                        <a href="model-page.html?model=gyroscope"
+                            class="view-btn">Explore Model <span>↗</span></a>
+                    </div>
+                </div>
+
+                <!-- 4-Bar Mechanism -->
+                <div class="model-card">
+                    <div class="model-preview">
+                        <model-viewer src="4bar.glb"
+                            alt="4-Bar Mechanism"
+                            camera-controls>
+                        </model-viewer>
+                        <span class="model-number">03</span>
+                    </div>
+                    <div class="model-info">
+                        <h3>4-Bar Mechanism</h3>
+                        <p>Linkage Mechanism</p>
+                        <a href="model-page.html?model=4bar"
+                            class="view-btn">Explore Model <span>↗</span></a>
+                    </div>
+                </div>
+
+                <!-- Maschinenbau Logo -->
+                <div class="model-card">
+                    <div class="model-preview">
+                        <model-viewer src="maschinenbau-pferd.glb"
+                            alt="Maschinenbau Logo"
+                            camera-controls>
+                        </model-viewer>
+                        <span class="model-number">04</span>
+                    </div>
+                    <div class="model-info">
+                        <h3>Maschinenbau Logo</h3>
+                        <p>Department Identity</p>
+                        <a href="model-page.html?model=maschinenbau-pferd"
+                            class="view-btn">Explore Model <span>↗</span></a>
+                    </div>
+                </div>
+
+                <!-- Steam Engine Governor -->
+                <div class="model-card">
+                    <div class="model-preview">
+                        <model-viewer src="steam-governor.glb"
+                            alt="Steam Engine Governor"
+                            camera-controls>
+                        </model-viewer>
+                        <span class="model-number">05</span>
+                    </div>
+                    <div class="model-info">
+                        <h3>Steam Engine Governor</h3>
+                        <p>Mechanical Regulation</p>
+                        <a href="model-page.html?model=steam-governor"
+                            class="view-btn">Explore Model <span>↗</span></a>
+                    </div>
+                </div>
+
+                <!-- Oscillator 1 -->
+                <div class="model-card">
+                    <div class="model-preview">
+                        <model-viewer src="oscillator_mode1.glb"
+                            alt="Oscillator Mode 1"
+                            camera-controls>
+                        </model-viewer>
+                        <span class="model-number">06</span>
+                    </div>
+                    <div class="model-info">
+                        <h3>Oscillator (1)</h3>
+                        <p>Mode 01</p>
+                        <a href="model-page.html?model=oscillator_mode1"
+                            class="view-btn">Explore Model <span>↗</span></a>
+                    </div>
+                </div>
+
+                <!-- Oscillator 2 -->
+                <div class="model-card">
+                    <div class="model-preview">
+                        <model-viewer src="oscillator_mode2.glb"
+                            alt="Oscillator Mode 2"
+                            camera-controls>
+                        </model-viewer>
+                        <span class="model-number">07</span>
+                    </div>
+                    <div class="model-info">
+                        <h3>Oscillator (2)</h3>
+                        <p>Mode 02</p>
+                        <a href="model-page.html?model=oscillator_mode2"
+                            class="view-btn">Explore Model <span>↗</span></a>
+                    </div>
+                </div>
+
+                <!-- Oscillator 3 -->
+                <div class="model-card">
+                    <div class="model-preview">
+                        <model-viewer src="oscillator_mode3.glb"
+                            alt="Oscillator Mode 3"
+                            camera-controls>
+                        </model-viewer>
+                        <span class="model-number">08</span>
+                    </div>
+                    <div class="model-info">
+                        <h3>Oscillator (3)</h3>
+                        <p>Mode 03</p>
+                        <a href="model-page.html?model=oscillator_mode3"
+                            class="view-btn">Explore Model <span>↗</span></a>
+                    </div>
+                </div>
+
+                <!-- Cubes -->
+                <div class="model-card">
+                    <div class="model-preview">
+                        <model-viewer src="cubes.glb"
+                            alt="Cubes"
+                            camera-controls>
+                        </model-viewer>
+                        <span class="model-number">09</span>
+                    </div>
+                    <div class="model-info">
+                        <h3>Cubes</h3>
+                        <p>3D Geometries</p>
+                        <a href="model-page.html?model=cubes"
+                            class="view-btn">Explore Model <span>↗</span></a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>AR MODEL LIBRARY <span>|</span> MECHANICAL ENGINEERING</p>
+    </footer>
+
+</body>
+</html>
