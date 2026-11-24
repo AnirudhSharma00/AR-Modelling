@@ -5,213 +5,282 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AR Model Library</title>
 
-    <link rel="stylesheet" href="styleModified.css">
+    <title>Mechanical Engineering | AR Model Library</title>
+
+    <link rel="stylesheet" href="style.css">
 
     <script type="module"
         src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js">
     </script>
 </head>
 
-<body>
+<body class="library-page">
 
-    <header class="header">
-        <div class="header-content">
-            <div class="logo">AR<span>LAB</span></div>
-            <div class="header-tag">MECHANICAL ENGINEERING</div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a class="brand" href="index.html">
+                <span class="brand-icon">◇</span>
+                Mechanical Engineering | AR Lab
+            </a>
+
+            <span class="nav-label">3D & AR Visualizations</span>
+        </div>
+    </nav>
+
+    <!-- Introduction -->
+    <header class="hero">
+        <div class="container">
+
+            <span class="eyebrow">
+                INTERACTIVE ENGINEERING VISUALIZATIONS
+            </span>
+
+            <h1>Explore mechanics in 3D.</h1>
+
+            <p>
+                Discover mechanical systems, explore their motion
+                and understand engineering concepts through
+                interactive 3D models and augmented reality.
+            </p>
+
+            <div class="hero-info">
+                <span>9 Models</span>
+                <span>Interactive 3D</span>
+                <span>Augmented Reality</span>
+            </div>
+
         </div>
     </header>
 
-    <main class="container">
+    <!-- Model Library -->
+    <main class="container library">
 
-        <section class="hero">
-            <div class="hero-label">3D INTERACTIVE LIBRARY</div>
+        <div class="section-header">
 
-            <h1>Explore the <span>World of Mechanics.</span></h1>
-
-            <p>
-                Discover interactive 3D engineering models.
-                Rotate, inspect and explore mechanical systems
-                directly in your browser.
-            </p>
-
-            <div class="hero-line"></div>
-        </section>
-
-        <section class="library-section">
-
-            <div class="section-heading">
-                <div>
-                    <h2>Model Collection</h2>
-                    <p>Explore our collection of mechanical models</p>
-                </div>
-                <div class="model-count">09 MODELS</div>
+            <div>
+                <h2>Model Library</h2>
+                <p>Select a model to begin exploring.</p>
             </div>
 
-            <div class="model-grid">
+            <input
+                type="search"
+                id="search"
+                class="search-input"
+                aria-label="Search models"
+                placeholder="Search models...">
 
-                <!-- Spinning Top -->
-                <div class="model-card">
-                    <div class="model-preview">
-                        <model-viewer src="spinning-top-trajectory.glb"
-                            alt="Spinning Top"
-                            camera-controls>
-                        </model-viewer>
-                        <span class="model-number">01</span>
-                    </div>
-                    <div class="model-info">
-                        <h3>Spinning Top</h3>
-                        <p>Trajectory</p>
-                        <a href="model-page.html?model=spinning-top-trajectory"
-                            class="view-btn">Explore Model <span>↗</span></a>
-                    </div>
-                </div>
+        </div>
 
-                <!-- Gyroscope -->
-                <div class="model-card">
-                    <div class="model-preview">
-                        <model-viewer src="gyroscope.glb"
-                            alt="Gyroscope"
-                            camera-controls>
-                        </model-viewer>
-                        <span class="model-number">02</span>
-                    </div>
-                    <div class="model-info">
-                        <h3>Gyroscope</h3>
-                        <p>Rotational Dynamics</p>
-                        <a href="model-page.html?model=gyroscope"
-                            class="view-btn">Explore Model <span>↗</span></a>
-                    </div>
-                </div>
+        <!-- Category Filters -->
+        <div class="filters" aria-label="Model categories">
 
-                <!-- 4-Bar Mechanism -->
-                <div class="model-card">
-                    <div class="model-preview">
-                        <model-viewer src="4bar.glb"
-                            alt="4-Bar Mechanism"
-                            camera-controls>
-                        </model-viewer>
-                        <span class="model-number">03</span>
-                    </div>
-                    <div class="model-info">
-                        <h3>4-Bar Mechanism</h3>
-                        <p>Linkage Mechanism</p>
-                        <a href="model-page.html?model=4bar"
-                            class="view-btn">Explore Model <span>↗</span></a>
-                    </div>
-                </div>
+            <button class="filter-btn active"
+                data-category="All">All Models</button>
 
-                <!-- Maschinenbau Logo -->
-                <div class="model-card">
-                    <div class="model-preview">
-                        <model-viewer src="maschinenbau-pferd.glb"
-                            alt="Maschinenbau Logo"
-                            camera-controls>
-                        </model-viewer>
-                        <span class="model-number">04</span>
-                    </div>
-                    <div class="model-info">
-                        <h3>Maschinenbau Logo</h3>
-                        <p>Department Identity</p>
-                        <a href="model-page.html?model=maschinenbau-pferd"
-                            class="view-btn">Explore Model <span>↗</span></a>
-                    </div>
-                </div>
+            <button class="filter-btn"
+                data-category="Dynamics">Dynamics</button>
 
-                <!-- Steam Engine Governor -->
-                <div class="model-card">
-                    <div class="model-preview">
-                        <model-viewer src="steam-governor.glb"
-                            alt="Steam Engine Governor"
-                            camera-controls>
-                        </model-viewer>
-                        <span class="model-number">05</span>
-                    </div>
-                    <div class="model-info">
-                        <h3>Steam Engine Governor</h3>
-                        <p>Mechanical Regulation</p>
-                        <a href="model-page.html?model=steam-governor"
-                            class="view-btn">Explore Model <span>↗</span></a>
-                    </div>
-                </div>
+            <button class="filter-btn"
+                data-category="Kinematics">Kinematics</button>
 
-                <!-- Oscillator 1 -->
-                <div class="model-card">
-                    <div class="model-preview">
-                        <model-viewer src="oscillator_mode1.glb"
-                            alt="Oscillator Mode 1"
-                            camera-controls>
-                        </model-viewer>
-                        <span class="model-number">06</span>
-                    </div>
-                    <div class="model-info">
-                        <h3>Oscillator (1)</h3>
-                        <p>Mode 01</p>
-                        <a href="model-page.html?model=oscillator_mode1"
-                            class="view-btn">Explore Model <span>↗</span></a>
-                    </div>
-                </div>
+            <button class="filter-btn"
+                data-category="Vibrations">Vibrations</button>
 
-                <!-- Oscillator 2 -->
-                <div class="model-card">
-                    <div class="model-preview">
-                        <model-viewer src="oscillator_mode2.glb"
-                            alt="Oscillator Mode 2"
-                            camera-controls>
-                        </model-viewer>
-                        <span class="model-number">07</span>
-                    </div>
-                    <div class="model-info">
-                        <h3>Oscillator (2)</h3>
-                        <p>Mode 02</p>
-                        <a href="model-page.html?model=oscillator_mode2"
-                            class="view-btn">Explore Model <span>↗</span></a>
-                    </div>
-                </div>
+            <button class="filter-btn"
+                data-category="Other">Other</button>
 
-                <!-- Oscillator 3 -->
-                <div class="model-card">
-                    <div class="model-preview">
-                        <model-viewer src="oscillator_mode3.glb"
-                            alt="Oscillator Mode 3"
-                            camera-controls>
-                        </model-viewer>
-                        <span class="model-number">08</span>
-                    </div>
-                    <div class="model-info">
-                        <h3>Oscillator (3)</h3>
-                        <p>Mode 03</p>
-                        <a href="model-page.html?model=oscillator_mode3"
-                            class="view-btn">Explore Model <span>↗</span></a>
-                    </div>
-                </div>
+        </div>
 
-                <!-- Cubes -->
-                <div class="model-card">
-                    <div class="model-preview">
-                        <model-viewer src="cubes.glb"
-                            alt="Cubes"
-                            camera-controls>
-                        </model-viewer>
-                        <span class="model-number">09</span>
-                    </div>
-                    <div class="model-info">
-                        <h3>Cubes</h3>
-                        <p>3D Geometries</p>
-                        <a href="model-page.html?model=cubes"
-                            class="view-btn">Explore Model <span>↗</span></a>
-                    </div>
-                </div>
+        <p id="model-count" class="model-count" aria-live="polite"></p>
 
-            </div>
-        </section>
+        <!-- Model cards are generated here -->
+        <div class="model-grid" id="model-grid"></div>
 
     </main>
 
-    <footer>
-        <p>AR MODEL LIBRARY <span>|</span> MECHANICAL ENGINEERING</p>
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Mechanical Engineering | AR Visualization Library</p>
+        <p>Interactive learning through simulation and visualization.</p>
     </footer>
+
+    <script>
+
+        // ---------------------------------------
+        // Model database
+        // ---------------------------------------
+
+        const models = [
+            {
+                id: "spinning-top-trajectory",
+                name: "Spinning Top",
+                category: "Dynamics",
+                description: "Explore the rotational motion and trajectory of a spinning top."
+            },
+            {
+                id: "gyroscope",
+                name: "Gyroscope",
+                category: "Dynamics",
+                description: "Visualize gyroscopic motion and rotational dynamics."
+            },
+            {
+                id: "4bar",
+                name: "4-Bar Mechanism",
+                category: "Kinematics",
+                description: "Investigate the motion of a four-bar linkage mechanism."
+            },
+            {
+                id: "steam-governor",
+                name: "Steam Engine Governor",
+                category: "Dynamics",
+                description: "Explore the operating principle of a centrifugal governor."
+            },
+            {
+                id: "oscillator_mode1",
+                name: "Oscillator – Mode 1",
+                category: "Vibrations",
+                description: "Visualize the first vibration mode of the oscillator."
+            },
+            {
+                id: "oscillator_mode2",
+                name: "Oscillator – Mode 2",
+                category: "Vibrations",
+                description: "Visualize the second vibration mode of the oscillator."
+            },
+            {
+                id: "oscillator_mode3",
+                name: "Oscillator – Mode 3",
+                category: "Vibrations",
+                description: "Visualize the third vibration mode of the oscillator."
+            },
+            {
+                id: "maschinenbau-pferd",
+                name: "Maschinenbau Logo",
+                category: "Other",
+                description: "Explore the mechanical engineering logo in three dimensions."
+            },
+            {
+                id: "cubes",
+                name: "Cubes",
+                category: "Other",
+                description: "A geometric demonstration for 3D and AR visualization."
+            }
+        ];
+
+        // ---------------------------------------
+        // Generate model cards
+        // ---------------------------------------
+
+        const grid = document.getElementById("model-grid");
+        const search = document.getElementById("search");
+        const count = document.getElementById("model-count");
+
+        let selectedCategory = "All";
+
+        function renderModels() {
+
+            const searchTerm = search.value.toLowerCase().trim();
+
+            const filteredModels = models.filter(model => {
+
+                const matchesCategory =
+                    selectedCategory === "All" ||
+                    model.category === selectedCategory;
+
+                const matchesSearch =
+                    model.name.toLowerCase().includes(searchTerm) ||
+                    model.category.toLowerCase().includes(searchTerm);
+
+                return matchesCategory && matchesSearch;
+            });
+
+            count.textContent =
+                `Showing ${filteredModels.length} of ${models.length} models`;
+
+            grid.innerHTML = filteredModels.map(model => `
+
+                <article class="model-card">
+
+                    <div class="preview-container">
+
+                        <span class="preview-label">3D PREVIEW</span>
+
+                        <model-viewer
+                            class="preview"
+                            src="${model.id}.glb"
+                            alt="${model.name}"
+                            camera-controls
+                            touch-action="pan-y"
+                            shadow-intensity="1"
+                            exposure="1"
+                            loading="lazy">
+                        </model-viewer>
+
+                        <span class="interaction-hint">
+                            Drag to rotate · Scroll to zoom
+                        </span>
+
+                    </div>
+
+                    <div class="card-content">
+
+                        <span class="category ${model.category.toLowerCase()}">
+                            ${model.category}
+                        </span>
+
+                        <h3>${model.name}</h3>
+
+                        <p>${model.description}</p>
+
+                        <a class="view-btn"
+                            href="model-page.html?model=${model.id}">
+                            Explore Model
+                            <span aria-hidden="true">→</span>
+                        </a>
+
+                    </div>
+
+                </article>
+
+            `).join("");
+
+            if (filteredModels.length === 0) {
+                grid.innerHTML = `
+                    <p class="empty-state">
+                        No matching models found.
+                    </p>
+                `;
+            }
+        }
+
+        // ---------------------------------------
+        // Category filters
+        // ---------------------------------------
+
+        document.querySelectorAll(".filter-btn").forEach(button => {
+
+            button.addEventListener("click", () => {
+
+                document.querySelectorAll(".filter-btn")
+                    .forEach(btn => btn.classList.remove("active"));
+
+                button.classList.add("active");
+
+                selectedCategory = button.dataset.category;
+
+                renderModels();
+            });
+        });
+
+        // Search functionality
+        search.addEventListener("input", renderModels);
+
+        // Initial rendering
+        renderModels();
+
+    </script>
 
 </body>
 </html>
